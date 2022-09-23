@@ -7,7 +7,8 @@ import (
 )
 func TestAddNumbers(t *testing.T) {
 	solution := adder.AddNumbers(6, 5)
-	if solution != 11 {
+	expected := 11
+	if solution != expected {
 		t.Error("result is incorrect: expected 5, got", solution)
 	}
 }
